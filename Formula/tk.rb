@@ -5,21 +5,21 @@
 class Tk < Formula
   desc "Minimal CLI ticket management system for AI agents"
   homepage "https://github.com/radutopala/ticket"
-  version "0.2.4"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/radutopala/ticket/releases/download/v0.2.4/tk_0.2.4_darwin_amd64.tar.gz"
-      sha256 "d280a16cb068732cb2e2d9e96c86056fd4a33970244af8c1fcfbaa8f8f89c098"
+      url "https://github.com/radutopala/ticket/releases/download/v0.3.0/tk_0.3.0_darwin_amd64.tar.gz"
+      sha256 "fe6dc0324aeb2f7df924b3d945b78811f470b6b492d16f1a5ac8cb2c0482712d"
 
       def install
         bin.install "tk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/radutopala/ticket/releases/download/v0.2.4/tk_0.2.4_darwin_arm64.tar.gz"
-      sha256 "6aa492d6fc01335ebeedb4cda3e5996c2e68d40babd79d4855478b3b3d461636"
+      url "https://github.com/radutopala/ticket/releases/download/v0.3.0/tk_0.3.0_darwin_arm64.tar.gz"
+      sha256 "62ab10e3360f0eb06fbf1f6a46ad150be064aa4602fd5218f1151176f059dbbf"
 
       def install
         bin.install "tk"
@@ -29,15 +29,15 @@ class Tk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/radutopala/ticket/releases/download/v0.2.4/tk_0.2.4_linux_amd64.tar.gz"
-      sha256 "81dfcfe458ddf645540e343160f8f0506cb75fe6e1fae9c47e8fa41fc07fac0d"
+      url "https://github.com/radutopala/ticket/releases/download/v0.3.0/tk_0.3.0_linux_amd64.tar.gz"
+      sha256 "a59d3b5d450576304a18246b6d106adaab1bd8201966ba4fe4adb899597480dc"
       def install
         bin.install "tk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/radutopala/ticket/releases/download/v0.2.4/tk_0.2.4_linux_arm64.tar.gz"
-      sha256 "d5e45743bd1045b0ade9ce982e3d4381a9bd05ba07b608f7f46852f2eaa5eeb0"
+      url "https://github.com/radutopala/ticket/releases/download/v0.3.0/tk_0.3.0_linux_arm64.tar.gz"
+      sha256 "e62ccdc5ae2533eb811c8d8556b2bfb742052dfab7a990b820d2bb7af42462ba"
       def install
         bin.install "tk"
       end
