@@ -5,21 +5,21 @@
 class Loop < Formula
   desc "Discord bot powered by Claude that runs AI agents in Docker containers"
   homepage "https://github.com/radutopala/loop"
-  version "0.1.6"
+  version "0.1.7"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/radutopala/loop/releases/download/v0.1.6/loop_0.1.6_darwin_amd64.tar.gz"
-      sha256 "980f05acff8134b17392182ec7c2ee8b546aeeda6d5f519720de5aade8d1cf45"
+      url "https://github.com/radutopala/loop/releases/download/v0.1.7/loop_0.1.7_darwin_amd64.tar.gz"
+      sha256 "d8ae86638e3d8dfb59fd0be1da8e62a900bf06f2b2fafb9257faabf1a93227f6"
 
       def install
         bin.install "loop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/radutopala/loop/releases/download/v0.1.6/loop_0.1.6_darwin_arm64.tar.gz"
-      sha256 "90a9f4dc4be16e292434f8fc27a6743c9c2d0270c3433954c48174f1a1d7cd7d"
+      url "https://github.com/radutopala/loop/releases/download/v0.1.7/loop_0.1.7_darwin_arm64.tar.gz"
+      sha256 "bdc41a7fd1f2318c275df3c5e6dd7d8d66415a78188294b0f17dabfd239f4016"
 
       def install
         bin.install "loop"
@@ -29,15 +29,15 @@ class Loop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/radutopala/loop/releases/download/v0.1.6/loop_0.1.6_linux_amd64.tar.gz"
-      sha256 "29dd6d22db3699dae126497cdfc1113f97176cd3d2bc389dedb9e8fbabf2918a"
+      url "https://github.com/radutopala/loop/releases/download/v0.1.7/loop_0.1.7_linux_amd64.tar.gz"
+      sha256 "df2191cd1f0acffa5a63dc6d85b339ec21d43f70d3107f056878aa5e3bf79f2d"
       def install
         bin.install "loop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/radutopala/loop/releases/download/v0.1.6/loop_0.1.6_linux_arm64.tar.gz"
-      sha256 "ddaafca39296097ebc87bb24d57ad1b505d21ac22225e3074b4abfc091398015"
+      url "https://github.com/radutopala/loop/releases/download/v0.1.7/loop_0.1.7_linux_arm64.tar.gz"
+      sha256 "29a8ebc0309e53d9e23665994a11e87494553218e978d0b23b39fed8c7839164"
       def install
         bin.install "loop"
       end
