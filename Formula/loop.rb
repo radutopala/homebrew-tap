@@ -5,21 +5,21 @@
 class Loop < Formula
   desc "Discord bot powered by Claude that runs AI agents in Docker containers"
   homepage "https://github.com/radutopala/loop"
-  version "0.1.14"
+  version "0.1.15"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/radutopala/loop/releases/download/v0.1.14/loop_0.1.14_darwin_amd64.tar.gz"
-      sha256 "ab6ffcfc287175f5017ead6890d178ffe1ce5f4ea5d7df20c2484c9c68dd2e35"
+      url "https://github.com/radutopala/loop/releases/download/v0.1.15/loop_0.1.15_darwin_amd64.tar.gz"
+      sha256 "42e422535633206c66ae5723ef53ee9b6c223c951e4357cabefb9dd2f2087ad3"
 
       def install
         bin.install "loop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/radutopala/loop/releases/download/v0.1.14/loop_0.1.14_darwin_arm64.tar.gz"
-      sha256 "6ffa98ab987ba5604a908ad837d3d1385e09ecf60504c1b023e6cd6476e5f69c"
+      url "https://github.com/radutopala/loop/releases/download/v0.1.15/loop_0.1.15_darwin_arm64.tar.gz"
+      sha256 "82b1367d32f97efc945f3ae9e12661cdac27483c51c0a8410a626aa77d7f1de5"
 
       def install
         bin.install "loop"
@@ -29,15 +29,15 @@ class Loop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/radutopala/loop/releases/download/v0.1.14/loop_0.1.14_linux_amd64.tar.gz"
-      sha256 "75d9f2d0a097dca1b8c045076d8a999042b39115bef070b7ee394b6e5de619cc"
+      url "https://github.com/radutopala/loop/releases/download/v0.1.15/loop_0.1.15_linux_amd64.tar.gz"
+      sha256 "670d239c19e2f5ba1c423cf464181123cf4cffc4789a6ff7d62c75b9c1149b01"
       def install
         bin.install "loop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/radutopala/loop/releases/download/v0.1.14/loop_0.1.14_linux_arm64.tar.gz"
-      sha256 "3258ce7857361142cd4b089b4c679f9bfbff96485adebd72d9d06e155ab44d38"
+      url "https://github.com/radutopala/loop/releases/download/v0.1.15/loop_0.1.15_linux_arm64.tar.gz"
+      sha256 "ae629038144803e81e5aead849ee7912c9583a48817fb6f534b885f2e20e83de"
       def install
         bin.install "loop"
       end
