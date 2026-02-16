@@ -11,7 +11,7 @@ class Loop < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/radutopala/loop/releases/download/v0.1.24/loop_0.1.24_darwin_amd64.tar.gz"
-      sha256 "b74a007109f6bceafcc1a0cbaf6f082243edc18075745dd0c5ba1c7b5ae7642d"
+      sha256 "400d1a6cdbb097c9185fe179eabfbebd6f7e9ef9e0cd24b54ca1a757c5768bae"
 
       def install
         bin.install "loop"
@@ -19,7 +19,7 @@ class Loop < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/radutopala/loop/releases/download/v0.1.24/loop_0.1.24_darwin_arm64.tar.gz"
-      sha256 "bedab50ca02af11145829bfb77dcc55929a85113fb8aa7cc9e90b87a1a61beb6"
+      sha256 "251a675067c8007276148808cc2616b6f937b6b9315f3c5a01199a160d17366d"
 
       def install
         bin.install "loop"
@@ -30,14 +30,14 @@ class Loop < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/radutopala/loop/releases/download/v0.1.24/loop_0.1.24_linux_amd64.tar.gz"
-      sha256 "4ce0d7f39ce816000a1bbbb5dfe684f26e6ddbe84ae2329854c0042e0c7e14a6"
+      sha256 "38f7a526132f6b052c8c17b07c99c4abb31756320b8fb623d13f03b8fc583b24"
       def install
         bin.install "loop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/radutopala/loop/releases/download/v0.1.24/loop_0.1.24_linux_arm64.tar.gz"
-      sha256 "f73f3e0a8b8675fe9d7fc14054dd6b8b48c4dca9b39d09ee0f230854017e6d55"
+      sha256 "8a99d73f9a3119be9282a3f98a1d39d6584a2b31b9265bc3f1fd9117b88ff318"
       def install
         bin.install "loop"
       end
