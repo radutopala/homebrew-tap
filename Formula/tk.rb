@@ -5,23 +5,23 @@
 class Tk < Formula
   desc "Minimal CLI ticket management system for AI agents"
   homepage "https://github.com/radutopala/ticket"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/radutopala/ticket/releases/download/v0.3.1/tk_0.3.1_darwin_amd64.tar.gz"
-      sha256 "fb780503c76bf339eb9ff6b751ee1efcd4c5aa2957ba8a469d8b6a8013e598c6"
+      url "https://github.com/radutopala/ticket/releases/download/v0.4.0/tk_0.4.0_darwin_amd64.tar.gz"
+      sha256 "be4e84373138056b818edb20f37dc87ad0497603a1440fc23fdec6b49814c31b"
 
-      def install
+      define_method(:install) do
         bin.install "tk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/radutopala/ticket/releases/download/v0.3.1/tk_0.3.1_darwin_arm64.tar.gz"
-      sha256 "225976a43b70353f25b41487a9b1bf02e4b356d31993f7ce05b6408f3f3be9c1"
+      url "https://github.com/radutopala/ticket/releases/download/v0.4.0/tk_0.4.0_darwin_arm64.tar.gz"
+      sha256 "f033fe6d0e7bdffa5cf35006a5a5d61949b705d84f86ff91de8050ba5560dd21"
 
-      def install
+      define_method(:install) do
         bin.install "tk"
       end
     end
@@ -29,16 +29,16 @@ class Tk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/radutopala/ticket/releases/download/v0.3.1/tk_0.3.1_linux_amd64.tar.gz"
-      sha256 "be8d47b0ba5a05b43eca41638b5067b23f60034df3fcd05131d775a51f17a512"
-      def install
+      url "https://github.com/radutopala/ticket/releases/download/v0.4.0/tk_0.4.0_linux_amd64.tar.gz"
+      sha256 "aa0557c57cb8c4d9a234efb18ffd6880398e47d7c5c5aa6c5d58144f8ce4688f"
+      define_method(:install) do
         bin.install "tk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/radutopala/ticket/releases/download/v0.3.1/tk_0.3.1_linux_arm64.tar.gz"
-      sha256 "bc77126af825c9ba85306889b0d55489826f5910cb58040ee605e87ec490be46"
-      def install
+      url "https://github.com/radutopala/ticket/releases/download/v0.4.0/tk_0.4.0_linux_arm64.tar.gz"
+      sha256 "8f3a27a31be46fe6344408e4111ef946c555470b082c6a6331a64dca99604007"
+      define_method(:install) do
         bin.install "tk"
       end
     end
