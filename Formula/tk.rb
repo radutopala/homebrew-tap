@@ -11,7 +11,7 @@ class Tk < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/radutopala/ticket/releases/download/v0.4.2/tk_0.4.2_darwin_amd64.tar.gz"
-      sha256 "d8f4e293c3e1dfc10f14446eb9dfc495b295c70910a2f21fd177953b8a2dfe4c"
+      sha256 "b43cf513b9c9eded97d103058e0138f9990e72730d9d58d3b7eae54e27aba71a"
 
       define_method(:install) do
         bin.install "tk"
@@ -19,7 +19,7 @@ class Tk < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/radutopala/ticket/releases/download/v0.4.2/tk_0.4.2_darwin_arm64.tar.gz"
-      sha256 "3b2daa82f90b166c2920ef909f1ba1bcb5a4c2825c454e02d901e7052b9e1e87"
+      sha256 "105c9ea18da1d532797037a6a32153e600ef2093338bbeb7351054b84fcbffca"
 
       define_method(:install) do
         bin.install "tk"
@@ -30,14 +30,14 @@ class Tk < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/radutopala/ticket/releases/download/v0.4.2/tk_0.4.2_linux_amd64.tar.gz"
-      sha256 "5d36c07ae60b1489f8d55b22bc61cfb0deadec376e8db1b88401997b78d9fa48"
+      sha256 "bbf4e83e57e29b2e1a00d87290d52606e3f86fbd5a6305c87e7a9bca70fe429c"
       define_method(:install) do
         bin.install "tk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/radutopala/ticket/releases/download/v0.4.2/tk_0.4.2_linux_arm64.tar.gz"
-      sha256 "e7c45e662f1349a8645f8cef9e9daa482c21cf29fecf76816920f955285ec2f4"
+      sha256 "98e27f951ea6f337209880d7ffa57cb328455fc67a335ab8a159d768a56e8f0d"
       define_method(:install) do
         bin.install "tk"
       end
