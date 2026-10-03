@@ -1,6 +1,6 @@
 cask "macuse" do
-  version "2026.10.4"
-  sha256 "040ab3749d71b7d60d132f65c5fa7d51f55d4329d9e52bf8717ee69c5f667487"
+  version "2026.10.5"
+  sha256 "4a468a05dd22b00ecbeecfb01f95a137b2c7c77681738849b749c11c85af053f"
 
   url "https://github.com/radutopala/macuse/releases/download/v#{version}/macuse_#{version}_macos.zip"
   name "macuse"
@@ -11,9 +11,9 @@ cask "macuse" do
   auto_updates true
   depends_on macos: ">= :ventura"
 
-  app "macuse.app"
+  app "MacUse.app"
   # The CLI is the app's own binary, which holds the privacy grants.
-  binary "#{appdir}/macuse.app/Contents/MacOS/macuse"
+  binary "#{appdir}/MacUse.app/Contents/MacOS/macuse"
 
   uninstall launchctl: "io.github.radutopala.macuse",
             quit:      "io.github.radutopala.macuse"
