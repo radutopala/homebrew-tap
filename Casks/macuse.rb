@@ -1,6 +1,6 @@
 cask "macuse" do
-  version "2026.10.12"
-  sha256 "01444076af4d272d023ab85dbb4783dfd6dae6da802b8c0d4136f8925a8fd121"
+  version "2026.10.13"
+  sha256 "f23e2d126ee9eae9217eadcac511f71bdc6d3b847a793681fe954c95e4973cb9"
 
   url "https://github.com/radutopala/macuse/releases/download/v#{version}/macuse_#{version}_macos.zip"
   name "macuse"
