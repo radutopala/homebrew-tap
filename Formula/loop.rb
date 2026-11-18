@@ -5,21 +5,21 @@
 class Loop < Formula
   desc "Discord bot powered by Claude that runs AI agents in Docker containers"
   homepage "https://github.com/radutopala/loop"
-  version "2026.11.35"
+  version "2026.11.36"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/radutopala/loop/releases/download/v2026.11.35/loop_2026.11.35_darwin_amd64.tar.gz"
-      sha256 "3d1748746ec0fdd72b9e2a134710cee1c16ba64188888755649766582c8b4da3"
+      url "https://github.com/radutopala/loop/releases/download/v2026.11.36/loop_2026.11.36_darwin_amd64.tar.gz"
+      sha256 "36ea999d4dca7ddae949749b1236120ea6f59030a5c1c06a34e065b5210ed8b8"
 
       define_method(:install) do
         bin.install "loop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/radutopala/loop/releases/download/v2026.11.35/loop_2026.11.35_darwin_arm64.tar.gz"
-      sha256 "b62d10108bb7b03785bdb67ca8586ce8a9f56be347ae0b6acad2554495c956a6"
+      url "https://github.com/radutopala/loop/releases/download/v2026.11.36/loop_2026.11.36_darwin_arm64.tar.gz"
+      sha256 "54a0d7803b5743a1cec2a56e4f0b76087031b85f9b648111a179df69f200e9ba"
 
       define_method(:install) do
         bin.install "loop"
@@ -29,15 +29,15 @@ class Loop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/radutopala/loop/releases/download/v2026.11.35/loop_2026.11.35_linux_amd64.tar.gz"
-      sha256 "ed62f9025fc86f142e330bfb78ad98d98f9f4a2d52f0b9da29e825517ce75d04"
+      url "https://github.com/radutopala/loop/releases/download/v2026.11.36/loop_2026.11.36_linux_amd64.tar.gz"
+      sha256 "1668c3b6a75d4b5a48c44ff0840dae9cf23fe0eee59ce81ef160c59392bff1ed"
       define_method(:install) do
         bin.install "loop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/radutopala/loop/releases/download/v2026.11.35/loop_2026.11.35_linux_arm64.tar.gz"
-      sha256 "3b1e0d24d88c656324765c1b9531f9e06a851564011a2cca8501d641f645d98a"
+      url "https://github.com/radutopala/loop/releases/download/v2026.11.36/loop_2026.11.36_linux_arm64.tar.gz"
+      sha256 "b7edf751cdc204f2ed04ade1d7b3312273327d8f9ec7f7ca8e0cb96c2db9c9c9"
       define_method(:install) do
         bin.install "loop"
       end
